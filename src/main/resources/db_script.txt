@@ -1,0 +1,48 @@
+CREATE DATABASE IF NOT EXISTS `pract_db`;
+USE `pract_db`;
+
+DROP TABLE IF EXISTS `sm_state_master`;
+CREATE TABLE IF NOT EXISTS `sm_state_master` (
+  `state_id` int(11) NOT NULL AUTO_INCREMENT,
+  `state_code` varchar(2) NOT NULL,
+  `state_name` varchar(50) NOT NULL,
+  PRIMARY KEY (`state_id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4;
+
+
+INSERT INTO `sm_state_master` (`state_id`, `state_code`, `state_name`) VALUES
+	(1, '00', 'All States');
+INSERT INTO `sm_state_master` (`state_id`, `state_code`, `state_name`) VALUES
+	(2, '01', 'Johor');
+INSERT INTO `sm_state_master` (`state_id`, `state_code`, `state_name`) VALUES
+	(3, '02', 'Kedah');
+INSERT INTO `sm_state_master` (`state_id`, `state_code`, `state_name`) VALUES
+	(4, '03', 'Kelantan');
+INSERT INTO `sm_state_master` (`state_id`, `state_code`, `state_name`) VALUES
+	(5, '04', 'Melaka');
+INSERT INTO `sm_state_master` (`state_id`, `state_code`, `state_name`) VALUES
+	(6, '05', 'Negeri Sembilan');
+INSERT INTO `sm_state_master` (`state_id`, `state_code`, `state_name`) VALUES
+	(7, '06', 'Pahang');
+INSERT INTO `sm_state_master` (`state_id`, `state_code`, `state_name`) VALUES
+	(8, '07', 'Pulau Pinang');
+INSERT INTO `sm_state_master` (`state_id`, `state_code`, `state_name`) VALUES
+	(9, '08', 'Perak');
+INSERT INTO `sm_state_master` (`state_id`, `state_code`, `state_name`) VALUES
+	(10, '09', 'Perlis');
+INSERT INTO `sm_state_master` (`state_id`, `state_code`, `state_name`) VALUES
+	(11, '10', 'Selangor');
+INSERT INTO `sm_state_master` (`state_id`, `state_code`, `state_name`) VALUES
+	(12, '11', 'Terengganu');
+INSERT INTO `sm_state_master` (`state_id`, `state_code`, `state_name`) VALUES
+	(13, '12', 'Sabah');
+INSERT INTO `sm_state_master` (`state_id`, `state_code`, `state_name`) VALUES
+	(14, '13', 'Sarawak');
+INSERT INTO `sm_state_master` (`state_id`, `state_code`, `state_name`) VALUES
+	(15, '14', 'Wilayah Persekutuan Kuala Lumpur');
+INSERT INTO `sm_state_master` (`state_id`, `state_code`, `state_name`) VALUES
+	(16, '15', 'Wilayah Persekutuan Labuan');
+INSERT INTO `sm_state_master` (`state_id`, `state_code`, `state_name`) VALUES
+	(17, '16', 'Wilayah Persekutuan Putrajaya');
+INSERT INTO `sm_state_master` (`state_id`, `state_code`, `state_name`) VALUES
+	(18, '17', 'Not Applicable');
